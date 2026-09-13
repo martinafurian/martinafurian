@@ -9,7 +9,7 @@ SELECT
   Market AS geographic_market,
   COUNT(*) AS total_orders,
   
-  -- Count only orders flagger as suspected fraud
+  -- Count only orders flagged as suspected fraud
   COUNT(CASE WHEN `Order Status` = 'SUSPECTED_FRAUD' THEN 1 END) AS fraudulent_orders,
   
   -- Calculate the Fraud Risk Rate (Percentage of fraud over total orders)
