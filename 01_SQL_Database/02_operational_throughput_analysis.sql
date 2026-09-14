@@ -43,5 +43,4 @@ SELECT
 FROM 
   AggregatedThroughput
 ORDER BY 
-  department_name ASC, 
   hourly_orders_processed DESC;
